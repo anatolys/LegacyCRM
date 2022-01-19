@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.About">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" 
+                Padding="0" 
+                Margin="1,1,1,1" 
+                OutlineColor="Gray">
+                    <Label Text="О программе" 
+                    TextColor="Gray"
+                    FontSize="Small" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="StartAndExpand"/>
+                </Frame>
+            </Grid>
+            <Label Text="Мобильный клиент v.1.0.0.0 для системы SomeTrading CRM"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

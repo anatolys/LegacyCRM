@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.IhsRepPage" 
+             NavigationPage.HasNavigationBar="False" 
+             ControlTemplate="{StaticResource BackArrowTemplate}">
+    <StackLayout Spacing="0">
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="Отчет IHS" 
+                    TextColor="Gray"
+                    FontSize="Small" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="StartAndExpand"/>
+            </Grid>
+            <Grid RowSpacing="0" ColumnSpacing="0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                    <Label Text="Продажи SomeTrading (руб.)" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="1" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                    <Label Text="Продажи SomeTrading (шт.)" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="2" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                    <Label Text="Общие продажи и ТВ (руб.)" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="3" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                    <Label Text="Общие продажи и ТВ (шт.)" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="4" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                    <Label Text="IHS" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                </Frame>
+            </Grid>
+            <ListView ItemsSource="{Binding IhsRepItems}" 
+                      ItemTapped="EditRepItem">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding SomeTradingSalesRub}" HorizontalOptions="StartAndExpand"/>
+                                <Label Text="{Binding SomeTradingSalesItems}" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding TotalSalesRub}" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding TotalSalesItems}" HorizontalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding Share}, StringFormat='{0:p}'}" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    <!--</ContentPage.Content>-->
+</ContentPage>

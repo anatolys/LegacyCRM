@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.AddVisitPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="newItem.png" Clicked="AddExtraVisit"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" 
+                Padding="0" 
+                Margin="1,1,1,1" 
+                OutlineColor="Gray">
+                    <Label Text="Добавить экстренный визит" 
+                    TextColor="Gray"
+                    FontSize="Small" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="StartAndExpand"/>
+                </Frame>
+            </Grid>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

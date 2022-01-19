@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.MainPage"
+             BackgroundColor="White" NavigationPage.HasNavigationBar="False" 
+             ControlTemplate="{StaticResource BackArrowTemplate}">
+    <StackLayout Orientation="Vertical" Spacing="0">
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                Padding="0" 
+                Margin="1,1,1,1" 
+                OutlineColor="Gray">
+                <Label Text="Маршрут на выбранную дату" 
+                    TextColor="DarkSlateGray"
+                    FontSize="Small" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="StartAndExpand"/>
+            </Frame>
+            <Label Text="Дата маршрута:" Grid.Column="0" Grid.Row="1" 
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand" 
+                TextColor="Black" FontSize="Small"
+                   Margin="5,5,5,5"/>
+            <DatePicker x:Name="datepicker" Grid.Column="1" Grid.Row="1"
+                VerticalOptions="Center"
+                HorizontalOptions="EndAndExpand"
+                TextColor="Gray" 
+                Format="yyyy-MM-dd" 
+                Date="{Binding SelectedDate}">
+            </DatePicker>
+        </Grid>
+        <ActivityIndicator IsRunning="{Binding IsBusy}" 
+            Color="Gray" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <ListView ItemsSource="{Binding grouped}" 
+            IsGroupingEnabled="True" 
+            GroupDisplayBinding="{Binding VisitStatusName}"
+            ItemTapped="OnVisitCard" 
+            SeparatorColor="DodgerBlue" 
+            VerticalOptions="StartAndExpand" 
+            HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding VisitShortAddress, Mode=TwoWay}" TextColor="DarkGray">
+                        </TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+</ContentPage>

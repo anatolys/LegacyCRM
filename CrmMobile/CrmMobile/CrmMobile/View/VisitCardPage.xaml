@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.VisitCardPage" 
+             NavigationPage.HasNavigationBar="False" 
+             ControlTemplate="{StaticResource BackArrowTemplate}">
+    <ScrollView Orientation="Vertical" Padding="0" VerticalOptions="FillAndExpand">
+        <StackLayout Spacing="0">
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" 
+                Padding="0" 
+                Margin="1,1,1,1" 
+                OutlineColor="Gray">
+                    <Label Text="Карточка визита" 
+                    TextColor="Gray"
+                    FontSize="Small" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="StartAndExpand"/>
+                </Frame>
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" 
+                    Text="Дата: " 
+                    HorizontalOptions="Start" 
+                    VerticalOptions="Center" 
+                    TextColor="DodgerBlue" 
+                    FontSize="Micro"/>
+                <Label Grid.Row="0" Grid.Column="1" 
+                    Text="{Binding VisitCardDate, StringFormat='{0:yyyy-MM-dd}'}" 
+                    HorizontalOptions="Start" 
+                    VerticalOptions="Center" 
+                    TextColor="Gray" 
+                    FontSize="Small"/>
+                <Button Text="{Binding CloseBtnText}" 
+                    Grid.Row="0" Grid.Column="2" Command="{Binding CloseVisitCommand}"
+                    Style="{StaticResource ButtonStyle}"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="EndAndExpand"
+                    BackgroundColor="Red"
+                    FontSize="Small"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Grid.Column="0" 
+                    Text="Сеть : " 
+                    HorizontalOptions="Start" 
+                    VerticalOptions="Start" 
+                    TextColor="DodgerBlue"
+                    FontSize="Micro"/>
+                <Label Grid.Row="1" Grid.Column="1" 
+                       Text="{Binding VisitCardClient, StringFormat='{0}'}" 
+                       HorizontalOptions="Start" VerticalOptions="Start" 
+                       TextColor="Gray"
+                       FontSize="Small"/>
+                <Label Grid.Row="2" Grid.Column="0" 
+                       Text="Точка: " 
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start"  
+                       TextColor="DodgerBlue" 
+                       LineBreakMode="NoWrap" FontSize="Micro"/>
+                <Label Grid.Row="2" Grid.Column="1"  
+                       Text="{Binding VisitCardShortAddress, StringFormat='{0}'}" 
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start" 
+                       TextColor="Gray" 
+                       LineBreakMode="CharacterWrap"
+                       FontSize="Small"/>
+                <Label Grid.Row="3" Grid.Column="0" 
+                       Text="Адрес: " 
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start" 
+                       TextColor="DodgerBlue" 
+                       LineBreakMode="NoWrap"
+                       FontSize="Micro"/>
+                <Label Grid.Row="3" Grid.Column="1" 
+                       Text="{Binding VisitCardAddress, StringFormat='{0}'}" 
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start" 
+                       TextColor="Gray" 
+                       LineBreakMode="CharacterWrap"
+                       FontSize="Small"/>
+            </Grid>
+
+            <Button Text="IHS" Clicked="DoIhs"  
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Активность конкурентов" Clicked="DoCompetitor"  
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Дистрибуция" Clicked="DoDistribution"  
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Дистрибуция POSM" Clicked="DoDistrPosm"  
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Доля на полке" Clicked="DoPortion"   
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button Text="Обучение" Clicked="DoTraining"   
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button Text="Фотоотчет" Clicked="DoPhoto"  
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

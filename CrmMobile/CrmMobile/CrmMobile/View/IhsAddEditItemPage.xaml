@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.IhsAddEditItemPage"
+             NavigationPage.HasNavigationBar="False"
+    ControlTemplate="{StaticResource BackArrowTemplate}">
+    <StackLayout Padding="2">
+        <StackLayout Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.ColumnSpan="2"
+                Text="Редактирование отчета IHS" 
+                TextColor="Gray"
+                FontSize="Small" 
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="StartAndExpand"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="Продажи SomeTrading (руб.)" TextColor="DodgerBlue"/>
+                <Entry Grid.Row="1" Grid.Column="1" Text="{Binding SomeTradingSalesRub, Mode=TwoWay}" HorizontalTextAlignment="End"/>
+                <Label Grid.Row="2" Grid.Column="0" Text="Продажи SomeTrading (шт.)" TextColor="DodgerBlue"/>
+                <Entry Grid.Row="2" Grid.Column="1" Text="{Binding SomeTradingSalesItems, Mode=TwoWay}" HorizontalTextAlignment="End"/>
+                <Label Grid.Row="3" Grid.Column="0" Text="Общие продажи и ТВ (руб.)" TextColor="DodgerBlue"/>
+                <Entry Grid.Row="3" Grid.Column="1" Text="{Binding TotalSalesRub, Mode=TwoWay}" HorizontalTextAlignment="End"/>
+                <Label Grid.Row="4" Grid.Column="0" Text="Общие продажи и ТВ (шт.)" TextColor="DodgerBlue"/>
+                <Entry Grid.Row="4" Grid.Column="1" Text="{Binding TotalSalesItems, Mode=TwoWay}" HorizontalTextAlignment="End" TextColor="Black"/>
+                <Label Grid.Row="5" Grid.Column="0" Text="IHS" TextColor="DodgerBlue" HorizontalOptions="StartAndExpand"/>
+                <Label Grid.Row="5" Grid.Column="1" Text="{Binding Ihs, Mode=TwoWay, StringFormat='{0:0.00%}'}" HorizontalOptions="EndAndExpand" TextColor="Black" FontSize="Medium"/>
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

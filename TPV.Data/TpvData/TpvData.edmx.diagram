@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="01df6186e93341679c91654850014f11" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="TpvModel.AdvCampaignMaterial" Width="1.5" PointX="44.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.AdvCampaignReportItemMaterial" Width="1.5" PointX="47.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.AdvCampaignReportItem" Width="2.25" PointX="38.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.AdvCampaign" Width="1.5" PointX="41.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Advertising" Width="1.5" PointX="29.375" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.AdvertisingReportItem" Width="2" PointX="32.375" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.BenchCategories1" Width="1.75" PointX="22.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.BenchReportItem" Width="1.875" PointX="29.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.BenchReportItemsTempStore" Width="2.125" PointX="18.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.BenchSku" Width="1.5" PointX="19.125" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Brand" Width="1.5" PointX="16.875" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Categories1" Width="1.5" PointX="14.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Categories2" Width="1.5" PointX="10.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Categories3" Width="1.5" PointX="14.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Categories4" Width="1.75" PointX="32.25" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Category1UserSubroleMappings" Width="2.5" PointX="13.875" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.City" Width="2.25" PointX="31.375" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.ClientOffice" Width="2.625" PointX="27" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Client" Width="2.125" PointX="27.5" PointY="38.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.CompetitorAdvertising" Width="2.125" PointX="29.375" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.CompetitorReportItem" Width="2.25" PointX="5.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.CompetitorReport" Width="2.125" PointX="30.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.ListingClientOfficeMapping" Width="2.25" PointX="32.125" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Listing" Width="1.5" PointX="35.125" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.ListingSKUMapping" Width="1.5" PointX="37.5" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.MerchantReportCopied" Width="2.125" PointX="41.375" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.MerchantReportItem" Width="2" PointX="36.25" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.MerchantReportItemsTempStore" Width="2.625" PointX="42.5" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.PhotoReportItem" Width="1.875" PointX="36.125" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.PhotoReportTag" Width="1.875" PointX="39.625" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.PortionReportItem" Width="1.75" PointX="30.875" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.PortionReportItemsTempStore" Width="2.5" PointX="12" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Report" Width="2.125" PointX="34.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.ReportType" Width="1.875" PointX="39.625" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.RouteClientOfficeException" Width="2.25" PointX="25.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.RouteClientOffice" Width="1.875" PointX="26.625" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.RouteClientOfficesDistinct" Width="2.25" PointX="23.125" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Route" Width="2.25" PointX="24.125" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.SellOutReportItem" Width="2" PointX="33" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.SellOutReportItemType" Width="1.875" PointX="30.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.SkuAvgPrice" Width="1.5" PointX="39.375" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.SkuExclusiveMapping" Width="1.875" PointX="39.375" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Sku" Width="1.75" PointX="36.875" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.TrainingReportItemParticipant" Width="2.375" PointX="42.125" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.TrainingReportItem" Width="2.125" PointX="38.875" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Training" Width="1.5" PointX="39.375" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.User" Width="2.5" PointX="20.375" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.VisitRule" Width="1.875" PointX="30.875" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.VisitRulesType1" Width="1.5" PointX="31" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.VisitRulesType2" Width="1.5" PointX="33.625" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TpvModel.Visit" Width="2.125" PointX="34.25" PointY="22.25" IsExpanded="true" />
+        <AssociationConnector Association="TpvModel.FK_AdvCampaignReportItemMaterials_AdvCampaignMaterials" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvCampaignReportItemMaterials_AdvCampaignReportItems" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvCampaignReportItemMaterials_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvCampaignReportItems_AdvCampaigns" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvCampaignReportItems_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvCampaignReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvertisingReportItems_Advertising" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvertisingReportItems_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_AdvertisingReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_BenchSkus_BenchCategories1" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_BenchReportItems_BenchSkus" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_BenchReportItems_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_BenchReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_BenchReportItemsTempStore_BenchSkus" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_BenchSkus_Brands" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_CompetitorReportItems_Brands" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TpvModel.FK_PortionReportItems_Brands" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TpvModel.FK_PortionReportItemsTempStore_Brands" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Categories2_Categories1" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Category1UserSubroleMappings_Categories1" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Categories3_Categories2" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Categories4_Categories3" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_CompetitorReportItems_Categories3" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TpvModel.FK_PortionReportItems_Categories3" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PortionReportItemsTempStore_Categories3" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Skus_Categories4" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Users_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Analyst1" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Analyst2" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Analyst3" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Analyst4" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Analyst5" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_MerchSupervisor" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_MerchSupervisor2" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_MerchSupervisor3" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_MerchSupervisor4" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_MerchSupervisor5" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Supervisor" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Supervisor2" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Supervisor3" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Supervisor4" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ClientOffices_Users_Supervisor5" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ListingClientOfficeMappings_ClientOffices" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_RouteClientOffices_ClientOffices" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_RouteClientOfficesDistincts_ClientOffices" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Users_ClientOffices" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Visits_ClientOffices" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Clients_VisitRules" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_CompetitorReportItems_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_CompetitorReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_CompetitorReports_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_CompetitorReports_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ListingClientOfficeMappings_Listings" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ListingSKUMappings_Listings" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_ListingSKUMappings_Skus" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_MerchantReportCopied_Reports_From" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_MerchantReportItems_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_MerchantReportItems_Skus" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_MerchantReportItems_Users" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TpvModel.FK_MerchantReportItemsTempStore_Skus" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_1" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_2" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_3" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_4" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_5" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_6" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_7" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_8" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_PhotoReportTags_9" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PhotoReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PortionReportItems_Reports" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_PortionReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Reports_ReportTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Reports_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Reports_Visits" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_SellOutReportItems_SellOutReports" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TpvModel.FK_TrainingReportItems_Reports" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TpvModel.FK_RouteClientOfficeExceptions_RouteClientOffices" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_RouteClientOfficeExceptions_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_RouteClientOffices_Routes" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_RouteClientOffices_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_RouteClientOfficesDistincts_Routes" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_RouteClientOfficesDistincts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Routes_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_SellOutReportItems_SellOutReportItemTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_SellOutReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_SkuAvgPrices_Skus" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_SkuExclusiveMappings_Skus" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_TrainingReportItemParticipants_TrainingReportItems" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_TrainingReportItemParticipants_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_TrainingReportItems_Trainings" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_TrainingReportItems_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Users_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Users_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Visits_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_Visits_Users_Supervisors" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_VisitRulesType1_VisitRules" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.FK_VisitRulesType2_VisitRules" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.AdvCampaignMaterialMappings" ManuallyRouted="false" />
+        <AssociationConnector Association="TpvModel.Category1BrandMappings" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

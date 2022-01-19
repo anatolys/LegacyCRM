@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.CompetitorPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="newItem.png" Clicked="AddConcRepItem"/>
+        <ToolbarItem Icon="removeItem.png" Clicked="DelConcRepItem"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView Orientation="Both" Padding="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout Spacing="0">
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Отчет Активность конкурентов" TextColor="Gray" FontSize="Small" VerticalOptions="CenterAndExpand" HorizontalOptions="StartAndExpand"/>
+                </Grid>
+            <!--</StackLayout>
+            <StackLayout Spacing="0" HorizontalOptions="FillAndExpand">-->
+                <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Frame Grid.Row="0" Grid.Column="0" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Категория" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="1" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Подкатегория" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="2" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Группа" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="3" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Бренд" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="4" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Начало" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="5" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Окончание" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="6" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Описание" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="7" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Consultant" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="8" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Stands" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="9" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Pallets" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="10" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Discounts" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="11" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Gondolas" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="12" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Back cards" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="13" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Dispenser" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="14" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Booklets" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="15" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Banners" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="16" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Catalogue" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="17" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="HardPost" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="18" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Entrance" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="19" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Leaflets" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="20" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Brouchur" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="21" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Plotenier" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="22" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Video Demo" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="23" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Poster" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="24" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Shelf-talk" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="25" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Stikker" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="26" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Tag" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                    <Frame Grid.Row="0" Grid.Column="27" 
+                    Padding="0" 
+                    Margin="1,1,1,1" 
+                    OutlineColor="Gray">
+                        <Label Text="Wobbler" 
+                        TextColor="DodgerBlue" 
+                        FontSize="Micro" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center"/>
+                    </Frame>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CrmMobile;assemly=CrmMobile"
+             x:Class="CrmMobile.SettingsPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <Grid RowSpacing="0" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" 
+                Padding="0" 
+                Margin="1,1,1,1" 
+                OutlineColor="Gray">
+                    <Label Text="Параметры" 
+                    TextColor="DodgerBlue"
+                    FontSize="Small" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="StartAndExpand"/>
+                </Frame>
+            </Grid>
+            <Grid RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="1,1,1,1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" 
+                    Text="Имя пользователя: " 
+                    TextColor="DodgerBlue" 
+                    FontSize="Micro"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start"/>
+                <Entry Grid.Row="1" Grid.Column="0" 
+                    x:Name="loginname" 
+                    Text="{Binding LoginName}" 
+                    VerticalOptions="Start" 
+                    HorizontalOptions="StartAndExpand" 
+                    TextColor="Gray" 
+                   Placeholder="Имя пользователя" />
+                <Label Grid.Row="2" Grid.Column="0" 
+                    Text="Пароль : " 
+                    TextColor="DodgerBlue"
+                    FontSize="Micro"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start"/>
+                <Entry Grid.Row="3" Grid.Column="0" 
+                    x:Name="password" 
+                    Text="{Binding Password, Mode=TwoWay}" 
+                    TextColor="Gray" 
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand" 
+                    Placeholder="Пароль"/>
+                <Label Grid.Row="4" Grid.Column="0" 
+                    Text="Домен : " 
+                    TextColor="DodgerBlue"
+                    FontSize="Micro"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="Start"/>
+                <Entry Grid.Row="5" Grid.Column="0" 
+                    x:Name="domain" 
+                    Text="{Binding Domain, Mode=TwoWay}" 
+                    TextColor="Gray"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand"
+                    Placeholder="Домен"/>
+                <Label Grid.Row="6" Grid.Column="0" 
+                    Text="Интернет адрес : " 
+                    TextColor="DodgerBlue" 
+                    FontSize="Micro"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="StartAndExpand"/>
+                <Entry Grid.Row="7" Grid.Column="0" 
+                    x:Name="url" 
+                    Text="{Binding URL, Mode=TwoWay}" 
+                    TextColor="Gray"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="FillAndExpand"
+                    Placeholder="URL"/>
+            </Grid>
+            <Button Text="Сохранить"
+                Style="{StaticResource ButtonStyle}"
+                VerticalOptions="EndAndExpand" 
+                HorizontalOptions="FillAndExpand"
+                Clicked="OnSaveClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

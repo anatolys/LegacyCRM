@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrmMobile.App">
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="DodgerBlue"/>
+            </Style>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#1b97ff"/>
+                <Setter Property="BorderColor" Value="#1b97ff"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BorderRadius" Value = "0"/>
+            </Style>
+            <ControlTemplate x:Key="BackArrowTemplate">
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ColumnSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <BoxView BackgroundColor="SlateGray" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5"/>
+                    <Image Source="back.png" Grid.Column="0" Grid.Row="0" Margin="10,10,10,10"  
+                           IsEnabled="{TemplateBinding BindingContext.IsGoBackButtonVisible}" 
+                           IsVisible="{TemplateBinding BindingContext.IsGoBackButtonVisible}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{TemplateBinding BindingContext.GoBackCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="about.png" Grid.Column="0" Grid.Row="0" Margin="10,10,10,10"  
+                           IsEnabled="{TemplateBinding BindingContext.IsGoInfoButtonVisible}" 
+                           IsVisible="{TemplateBinding BindingContext.IsGoInfoButtonVisible}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{TemplateBinding BindingContext.GoInfoCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="refresh.png" Grid.Column="1" Grid.Row="0" Margin="10,10,10,10"  
+                           IsEnabled="{TemplateBinding BindingContext.IsGoRefreshButtonVisible}" 
+                           IsVisible="{TemplateBinding BindingContext.IsGoRefreshButtonVisible}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{TemplateBinding BindingContext.GoRefreshCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="settings.png" Grid.Column="2" Grid.Row="0" Margin="10,10,10,10"  
+                           IsEnabled="{TemplateBinding BindingContext.IsGoSettingsButtonVisible}" 
+                           IsVisible="{TemplateBinding BindingContext.IsGoSettingsButtonVisible}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{TemplateBinding BindingContext.GoSettingsCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="saveItem.png" Grid.Column="3" Grid.Row="0" Margin="10,10,10,10" 
+                           IsEnabled="{TemplateBinding BindingContext.IsSaveButtonVisible}" 
+                           IsVisible="{TemplateBinding BindingContext.IsSaveButtonVisible}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{TemplateBinding BindingContext.SaveItemCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="removeItem.png" Grid.Column="4" Grid.Row="0" Margin="10,10,10,10" 
+                           IsEnabled="{TemplateBinding BindingContext.IsDeleteButtonVisible}" 
+                           IsVisible="{TemplateBinding BindingContext.IsDeleteButtonVisible}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{TemplateBinding BindingContext.DeleteItemCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Source="newItem.png" Grid.Column="4" Grid.Row="0" Margin="10,10,10,10" 
+                           IsEnabled="{TemplateBinding BindingContext.IsAddItemButtonVisible}"
+                           IsVisible="{TemplateBinding BindingContext.IsAddItemButtonVisible}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{TemplateBinding BindingContext.AddItemCommand}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <ContentPresenter VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5"/>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
